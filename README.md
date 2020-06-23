@@ -1,9 +1,30 @@
-## SAMPLE EFFICIENT ADAPTIVE TEXT-TO-SPEECH
+## Text detection and recognition for iOS platform
 
-Plan to implement the ICLR2019 paper: SEA-TTS
+1. A simple app to demostrate how to run OCR pipeline on mobile device.
+2. Use psenet to detect probable text region.
+3. Support simple Chinese characters.
+4. The models were quite small, it's based on NCNN framework and can build for other platforms such as Android/Windows/MacOS by cross compiler tools easily.
 
-# How to
-* CBHG with speaker embedding, as local conditional of wavenet.
-* Transformer of encoder module refer to deepvoice3, as every timestep of wavenet query.
-* speaker embedding feed into every timestep of wavenet, as global contitional of wavenet.
+# Getting Started
+* Build OpenCV framework for iOS platform, 
+ the CMake command shell can refer to [opencv-3.4.0](https://github.com/taylorlu/opencv-3.4.0)
 
+* Build [ncnn](https://github.com/Tencent/ncnn/wiki/how-to-build#build-for-ios-on-macosx-with-xcode) framework for iOS platform
+ 
+
+* Build Xcode project and run the pipeline
+
+<table>
+  <tr>
+    <th><img src="https://github.com/taylorlu/ocrlite/blob/master/imgs/1.jpg" height="640" width="320" ></th>
+    <th><img src="https://github.com/taylorlu/ocrlite/blob/master/imgs/2.jpg" height="640" width="320" ></th>
+  </tr>
+  <tr>
+    <th><img src="https://github.com/taylorlu/ocrlite/blob/master/imgs/3.jpg" height="640" width="320" ></th>
+    <th><img src="https://github.com/taylorlu/ocrlite/blob/master/imgs/4.jpg" height="640" width="320" ></th>
+  </tr>
+  <tr>
+    <th><img src="https://github.com/taylorlu/ocrlite/blob/master/imgs/5.jpg" height="640" width="320" ></th>
+    <th><img src="https://github.com/taylorlu/ocrlite/blob/master/imgs/6.jpg" height="640" width="320" ></th>
+  </tr>
+</table>
