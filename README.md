@@ -28,3 +28,7 @@
     <th><img src="https://github.com/taylorlu/ocrlite/blob/master/imgs/6.jpg" height="640" width="320" ></th>
   </tr>
 </table>
+
+# Other Text & Document algorithms
+1. Document layout analysis [文档布局分析](https://github.com/taylorlu/detectron2)
+2. Document Rectification and Unwarping 歪曲文档纠正 [DewarpNet](https://github.com/cvlab-stonybrook/DewarpNet), [DocProj](https://github.com/xiaoyu258/DocProj)
